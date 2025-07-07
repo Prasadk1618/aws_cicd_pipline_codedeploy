@@ -1,36 +1,105 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <title> | AWS CLOUD DEPLOYMENT</title>
+  <meta charset="UTF-8">
+  <title>Prasad Kale | AWS Cloud Deployment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <style>
     body {
-      color: #000080;
-      background-color: #FFFFFF;
-      font-family: Arial, sans-serif;
-      font-size: 14px;
+      margin: 0;
+      padding: 0;
+      background: linear-gradient(to right, #e6f0ff, #ffffff);
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      color: #003366;
+      overflow-x: hidden;
     }
-    
+
+    .container {
+      text-align: center;
+      padding: 60px 20px;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .logo {
+      max-width: 120px;
+      margin-bottom: 20px;
+      animation: zoomIn 1.5s ease-in-out;
+    }
+
     h1 {
-      font-size: 500%;
-      font-weight: normal;
-      margin-bottom: 0;
+      font-size: 3.5em;
+      margin: 10px 0;
+      font-weight: bold;
+      animation: slideInDown 1.5s ease;
     }
-    
+
     h2 {
-      font-size: 200%;
+      font-size: 2em;
+      color: #006699;
+      margin-bottom: 20px;
+      animation: slideInUp 1.8s ease;
+    }
+
+    h3 {
       font-weight: normal;
-      margin-bottom: 0;
+      font-size: 1.3em;
+      margin-top: 20px;
+      animation: fadeIn 3s ease;
+    }
+
+    a {
+      color: #00509e;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Animations */
+    @keyframes fadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    @keyframes zoomIn {
+      from { transform: scale(0.5); opacity: 0; }
+      to { transform: scale(1); opacity: 1; }
+    }
+
+    @keyframes slideInDown {
+      from { transform: translateY(-50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    @keyframes slideInUp {
+      from { transform: translateY(50px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.5em;
+      }
+      h2 {
+        font-size: 1.5em;
+      }
+      h3 {
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
-  <div align="center">
-    <img src="https://s3.ap-south-1.amazonaws.com/www.basava.com/aar_logo_final.png" style="max-width: 20%;">
-    <h1>Congratulations!!! </h1>
-      <h2>Welcome to Prasad Kale World..| Prasad Kale..!!</h2>
-    <h3>This application was deployed using AWS CodeDeploy.</h3>
-    <p>For next steps, read the <a href="http://aws.amazon.com/documentation/codedeploy">AWS CodeDeploy Documentation</a>.</p>
+  <div class="container">
+    <img src="https://s3.ap-south-1.amazonaws.com/www.basava.com/aar_logo_final.png" alt="Logo" class="logo">
+    <h1>👋 Congratulations!!!</h1>
+    <h2>Welcome to <strong>Prasad Kale</strong>'s World 🚀</h2>
+    <h3>This cloud portfolio was deployed using <strong>AWS CodeDeploy</strong>.</h3>
+    <p>📚 Learn more in the <a href="http://aws.amazon.com/documentation/codedeploy" target="_blank">AWS CodeDeploy Documentation</a>.</p>
   </div>
 </body>
 </html>
